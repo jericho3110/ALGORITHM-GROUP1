@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Text & Links Tutorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 10px;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        code {
+            background-color: #eee;
+            padding: 5px;
+            border-radius: 5px;
+            display: block;
+            white-space: pre-wrap;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>HTML Text & Links Tutorial</header>
+
+    <nav>
+        <a href="#text-formatting">Text Formatting</a>
+        <a href="#attributes-linking">Attributes & Links</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="text-formatting">
+        <h2>1. HTML Text Elements & Formatting</h2>
+        <p>HTML provides various elements to format text effectively:</p>
+
+        <h3>Key Concepts</h3>
+        <ul>
+            <li><strong>Text Elements:</strong> Use headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>), paragraphs (<code>&lt;p&gt;</code>), and lists (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>).</li>
+            <li><strong>Inline Formatting:</strong> <code>&lt;strong&gt;</code> (bold), <code>&lt;em&gt;</code> (italic), <code>&lt;u&gt;</code> (underline), <code>&lt;mark&gt;</code> (highlight), <code>&lt;del&gt;</code> (strikethrough), <code>&lt;code&gt;</code> (inline code), <code>&lt;br&gt;</code> (line break), and <code>&lt;hr&gt;</code> (horizontal rule).</li>
+            <li><strong>Semantic Formatting:</strong> Use <code>&lt;strong&gt;</code> instead of <code>&lt;b&gt;</code> and <code>&lt;em&gt;</code> instead of <code>&lt;i&gt;</code> for better meaning.</li>
+            <li><strong>Whitespace Handling:</strong> Use <code>&lt;pre&gt;</code> to preserve spaces and line breaks.</li>
+        </ul>
+
+        <h3>Example Code:</h3>
+        <code>
+&lt;h1&gt; Welcome to My Webpage &lt;/h1&gt;
+&lt;p&gt; This is a &lt;strong&gt; bold statement &lt;/strong&gt; and an &lt;em&gt; italicized note &lt;/em&gt;.&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2 &lt;mark&gt; highlighted &lt;/mark&gt;&lt;/li&gt;
+&lt;/ul&gt;
+        </code>
+    </section>
+
+    <section id="attributes-linking">
+        <h2>2. Attributes & Linking HTML Files</h2>
+        <p>Attributes provide extra information to elements.</p>
+
+        <h3>Key Concepts</h3>
+        <ul>
+            <li><strong>Attributes:</strong> Elements can have attributes like <code>id</code>, <code>class</code>, <code>href</code>, and <code>target</code>.</li>
+            <li><strong>Linking:</strong>
+                <ul>
+                    <li><strong>External Links:</strong> <code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code></li>
+                    <li><strong>Internal Links:</strong> <code>&lt;a href="about.html"&gt;About Us&lt;/a&gt;</code></li>
+                    <li><strong>Email Links:</strong> <code>&lt;a href="mailto:contact@gmail.com"&gt;Email Us&lt;/a&gt;</code></li>
+                    <li><strong>Page Jumps:</strong> <code>&lt;a href="#section-id"&gt;Jump to Section&lt;/a&gt;</code> with <code>&lt;div id="section-id"&gt;</code>.</li>
+                    <li><strong>New Tab:</strong> Use <code>target="_blank"</code> to open links in a new tab.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Example Code:</h3>
+        <code>
+&lt;a href="https://google.com" target="_blank"&gt; Google &lt;/a&gt;
+&lt;a href="contact.html"&gt; Contact Page &lt;/a&gt;
+&lt;a href="#footer"&gt; Jump to Footer &lt;/a&gt;
+...
+&lt;div id="footer"&gt; Footer Content &lt;/div&gt;
+        </code>
+    </section>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            font-family: monospace;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        iframe {
+            width: 100%;
+            height: 250px;
+            border: 1px solid #ccc;
+            background: white;
+        }
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>HTML Tutorial & Live Editor</header>
+
+    <section>
+        <h2>Try Writing Your Own HTML!</h2>
+        <p>Write your HTML code in the box below and click "Run Code" to see the output.</p>
+        <textarea id="codeEditor">
+&lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;a href='https://google.com' target='_blank'&gt;Visit Google&lt;/a&gt;
+        </textarea>
+        <button onclick="runCode()">Run Code</button>
+        <h3>Output:</h3>
+        <iframe id="outputFrame"></iframe>
+    </section>
+
+    <script>
+        function runCode() {
+            let code = document.getElementById("codeEditor").value;
+            let iframe = document.getElementById("outputFrame").contentWindow.document;
+            iframe.open();
+            iframe.write(code);
+            iframe.close();
+        }
+    </script>
+
+
+    <section id="contact">
+        <h2>3. Contact & Navigation</h2>
+        <p>Jump to different sections using links.</p>
+
+        <h3>Examples:</h3>
+        <ul>
+            <li><a href="https://w3schools.com" target="_blank">Visit W3Schools</a></li>
+            <li><a href="features.html">Go to Features Page</a></li>
+            <li><a href="#text-formatting">Jump to Text Formatting</a></li>
+            <li><a href="mailto:example@gmail.com">Email Us</a></li>
+        </ul>
+    </section>
+
+    <footer id="footer">
+        &copy; 2025 HTML Tutorial | Created by Jericho
+    </footer>
+
+</body>
+</html>
